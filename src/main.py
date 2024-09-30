@@ -2,7 +2,7 @@ from service.autenticacao_service import AutenticacaoService
 
 
 def lambda_handler(event, context):
-    print(AutenticacaoService().processar(event))
+    AutenticacaoService().processar(event)
 
 
 if __name__ == '__main__':

@@ -12,7 +12,7 @@ class AutenticacaoService:
 
     def processar(self, event):
 
-        cpf_cliente = event["pathParameters"].get("cpf", None)
+        cpf_cliente = event.get('pathParameters', {}).get("cpf") if event.get('pathParameters') is not None else {}
 
         if cpf_cliente:
             try:

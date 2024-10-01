@@ -1,6 +1,6 @@
 variable "function_name" {
   type        = string
-  default     = "postech-serverless"
+  default     = "postech-token-generator"
 }
 
 variable "function_role" {
